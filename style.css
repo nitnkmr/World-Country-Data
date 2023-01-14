@@ -8,9 +8,10 @@ body{
 .container{
     height: 100vh;
     width: 100vw;
+    
 }
 .upperSec{
-    height: 30%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -19,20 +20,41 @@ body{
     background-size: 100% 300%;
     color: aliceblue;
 }
+#search{
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: 1px solid blue;
+    height: 13%;
+    width: 30%;
+    border-radius: 20px;
+    padding: 15px;
+    animation: 2s;
+}
+#search:focus{
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: 2px solid blue;
+    height: 13%;
+    width: 30%;
+    border-radius: 20px;
+    padding: 15px;
+}
 #lowerSec{
+    margin-left: 4%;
     height: fit-content;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(21, 28, 28);
     color: white;
 }
 .card{
     height: 100px;
     width: 15%;
-    margin: 5px;
+    margin: 10px;
     margin-top: 25px;
     display: flex;
     justify-content: center;
@@ -56,7 +78,7 @@ body{
         color: rgb(2, 2, 2);
         box-shadow: 0px 0px 5px 2px grey;
         background-image: url("./images.jpg");
-        font-size: 1rem;
+        font-size: .8rem;
     }
     
     
@@ -65,7 +87,13 @@ button{
     border: none;
     padding: 10px;
     margin: 5px;
-    background-color: black;
+    background-color: rgb(122, 76, 214);
     color: aliceblue;
-    border-radius: 10px;
+}
+button:hover{
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(58, 17, 141);
+    color: aliceblue;
 }
